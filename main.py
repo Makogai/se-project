@@ -7,6 +7,7 @@ from PIL import ImageTk ,Image
 # Import pages
 from pages import Help
 from pages import Short
+from pages import Instagram
 
 class Window(Frame):
     def __init__(self, master=None):
@@ -31,7 +32,7 @@ class Window(Frame):
 
         # Buttons
         shortener_btn = Button(height=4,text="Link Shortener", command=Short.url_shortner).place(x=20, y=40)
-        shortener_btn2 = Button(text="Link Shortener").place(x=120, y=40)
+        shortener_btn2 = Button(text="Instagram Data", command=Instagram.InstagramData).place(x=120, y=40)
 
 
     def exitProgram(self):
